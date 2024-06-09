@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class PhoneNumberOutputStream {
 
-    public static void readFileAndPrint(File file) {
+    public void readFileAndPrint(File file) {
         Pattern pattern = Pattern.compile("\\d{3}-\\d{3}-\\d{4}");
         Pattern pattern1 = Pattern.compile("\\(\\d{3}\\) \\d{3}-\\d{4}");
 

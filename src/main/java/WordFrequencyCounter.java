@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.util.*;
 
 public class WordFrequencyCounter {
-    static File file;
+     File file;
 
     public WordFrequencyCounter(File file) {
         this.file = file;
     }
 
 
-    public static Map<String, Integer> countWordFrequency(File fileName) {
+   private   Map<String, Integer> countWordFrequency(File fileName) {
         
         Map<String, Integer> wordFrequencyMap = new HashMap<>();
 
@@ -31,7 +31,7 @@ public class WordFrequencyCounter {
         return wordFrequencyMap;
     }
 
-    public static void printSortedWordFrequency() {
+    public  void printSortedWordFrequency() {
         Map<String, Integer> wordFrequencyMap = countWordFrequency(file);
 
         List<Map.Entry<String, Integer>> wordFrequencyList = new ArrayList<>(wordFrequencyMap.entrySet());
